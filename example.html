@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./styles/styles.css"/>
+        <title>Football Team</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <main class="container">
+            <h1 class="display-1 text-center mt-2 mb-4">Football Teams</h1>
+            <form class="w-50 mx-auto">
+                <h2 class="display-3">Choose a team</h2>
+                <select id="teamsList" name="footballTeams">
+                    <option disabled>Select an option</option>
+                </select> 
+                <input id="forTeamInfo" type="button" class="btn btn-light btn-outline-dark d-block mt-3" value="Find out more" />
+                <p id="displayInfo" class="display-6 mt-4"></p>
+            </form>
+        </main>
+
+        <script src="./scripts/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+let length = teams.length;//part where trying to show up the picture
+if (getTeamByCode == "DAL") {
+    return document.getElementById("team_DAL");
+}
+else if (getTeamByCode == "DEN"){
+    return document.getElementById("team_DEN");
+}
+
+else if (getTeamByCode == "HOU") {
+    return document.getElementById("team_HOU");
+}
+
+else if (getTeamByCode == "KAN") {
+    return document.getElementById("team_KAN");
+}
+
+
+if (selectedTeam == "DAL"){
+    const DAL = getElementById("team_DAL");
+    return DAL;
+   }
